@@ -1,27 +1,31 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import {BrowserRouter as Router,Route,Routes,Link} from "react-router-dom";
-
 export default function Nav(){
     const [ico,icon]=useState('');
-    function reloadPage(e){ 
-          window.location.reload();
-            
-            icon('')
-      
-        console.log(e)
+    const [ic,io]=useState('');
+    function reloadPage(){ 
+        window.location.reload(); 
     }
+useEffect(()=>{
+    if(ic=='active'){
+        io('active')
+    }
+    else{
+        io('')
+    }
+},[])
     return(
         
         <header className="header" id="navbar-collapse-toggle">
 
     <ul className="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1 no-transform revealator-within">
-        <li className={`icon-box ${ico}`} onClick={ reloadPage }>
+        <li className={`icon-box ${ic}`} onClick={ ()=>{reloadPage();  io('active')}}>
             <i className="fa fa-home"></i>
             <Link to="/">
                 <h2>Home</h2>
             </Link>
         </li>
-        <li className={`icon-box ${ico}`} onClick={ reloadPage }>
+        <li className={`icon-box ${ic}`} onClick={()=>{reloadPage();io('active') }}>
             <i className="fa fa-user"></i>
             <Link to="/about">
                 <h2>About</h2>

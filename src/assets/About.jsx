@@ -1,5 +1,5 @@
 import React from 'react';
-
+import image from '../img/img-mobile.jpg'
 export default function About(){
     return(
  <div className='about'>
@@ -18,7 +18,7 @@ export default function About(){
                         <h3 className="text-uppercase custom-title mb-0 ft-wt-600">personal infos</h3>
                     </div>
                     <div className="col-12 d-block d-sm-none">
-                        <img src="img/img-mobile.jpg" className="img-fluid main-img-mobile" alt="my picture" />
+                        <img src={image} className="img-fluid main-img-mobile" alt="my picture" />
                     </div>
                     <div className="col-6">
                         <ul className="about-list list-unstyled open-sans-font">

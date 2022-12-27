@@ -1,7 +1,7 @@
 import React from 'react';
- import close from '../imgs/projects/navigation/close-button.png'
- import left from '../imgs/projects/navigation/left-arrow.png'
- import rigth from '../imgs/projects/navigation/right-arrow.png'
+ import close from '../img/projects/navigation/close-button.png'
+ import left from '../img/projects/navigation/left-arrow.png'
+ import rigth from '../img/projects/navigation/right-arrow.png'
 export default function Port(){
     return(
         <div className='portfolio'>

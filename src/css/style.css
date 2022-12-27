@@ -109,7 +109,7 @@ body.home.light .home-details h6 {
 }
 
 body.home.light .bg {
- 
+  
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -272,17 +272,17 @@ body.light hr.separator {
   }
 
   body.light.portfolio .slideshow nav span.nav-next {
-    background-image: url("../imgs/projects/navigation/right-arrow.png");
+    background-image: url("../img/projects/navigation/right-arrow.png");
     background-size: cover;
   }
 
   body.light.portfolio .slideshow nav span.nav-prev {
-    background-image: url("../imgs/projects/navigation/left-arrow.png");
+    background-image: url("../img/projects/navigation/left-arrow.png");
     background-size: cover;
   }
 
   body.light.portfolio .slideshow nav span.nav-close {
-    background-image: url("../imgs/projects/navigation/close-button.png");
+    background-image: url("../img/projects/navigation/close-button.png");
     background-size: cover;
   }
 
@@ -499,7 +499,7 @@ body.light hr.separator {
 }
 
 .home .bg {
-  background-image: url(../imgs/2.jpg);
+  background-image: url(../img/2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -1382,9 +1382,9 @@ body.light hr.separator {
     border-radius: 3px;
     z-index: 1;
     transform-origin: 5px 0;
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-    opacity 0.55s ease;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    background: 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    opacity :0.55s ease;
   }
 
   #menuToggle > span:first-child {

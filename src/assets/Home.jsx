@@ -1,5 +1,5 @@
 import React from 'react';
-import image from '../imgs/img-mobile.jpg'
+import image from '../img/img-mobile.jpg'
 import {BrowserRouter as Router,Route,Routes,Link} from "react-router-dom";
 export default function Hom(){
     function reloadPage(){ 
